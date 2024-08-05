@@ -36,3 +36,18 @@ These messages are added to a custom Rviz configuration, where the map is finall
 # Software Architecture
 <img src="imgs/software_architecture.png" alt="Software Architecture"/><br />
 <sub><b>Software Architecture</b></sub></a>
+
+## NXP FRDM KE-16Z development board
+The NXP FRDM KE-16Z development board uses FreeRTOS for task scheduling.
+The UART, I2C, GPIO, ADC and FlexTimer drivers are used here and the main applications are motor control, data acquiring (from the Lidar and IMU) and remote control.
+
+## Raspberry Pi 5
+The Operating System with which this board is equipped is Linux Ubuntu 24.04 LTS and the WIP
+
+# Used Technologies
+- C
+- Python
+- ROS2 (Jazzy Jalisco Distro)
+- FreeRTOS
+- Linux Ubuntu 24.04 LTS
+- PlantUML
