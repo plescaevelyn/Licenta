@@ -1,0 +1,2 @@
+../board/peripherals.c:583:6:BOARD_InitPeripherals	24	static
+../board/peripherals.c:597:6:BOARD_InitBootPeripherals	8	static

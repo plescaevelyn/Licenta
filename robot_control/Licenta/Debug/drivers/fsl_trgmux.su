@@ -1,0 +1,1 @@
+../drivers/fsl_trgmux.c:37:10:TRGMUX_SetTriggerSource	32	static

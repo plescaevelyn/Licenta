@@ -1,0 +1,5 @@
+../rbwsFreeRTOS/src/rbwsFreeRTOS.c:70:6:rbwsFreeRTOS_Initialize_Task	8	static
+../rbwsFreeRTOS/src/rbwsFreeRTOS.c:88:6:rbwsFreeRTOS_Main_Task	16	static
+../rbwsFreeRTOS/src/rbwsFreeRTOS.c:34:6:rbwsFreeRTOS_Module_Init	8	static
+../rbwsFreeRTOS/src/rbwsFreeRTOS.c:50:6:rbwsFreeRTOS_Module_Main	8	static
+../rbwsFreeRTOS/src/rbwsFreeRTOS.c:109:6:rbwsFreeRTOS_Initialize	24	static

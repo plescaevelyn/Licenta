@@ -1,0 +1,14 @@
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:76:6:delay	8	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:86:10:rbwsMPU6050_GetDeviceID	8	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:99:9:rbwsMPU6050_TestConnection	0	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:109:6:rbwsMPU6050_Config	40	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:128:6:rbwsMPU6050_ClockConfig	8	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:138:6:rbwsMPU6050_GyroConfig	8	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:146:6:rbwsMPU6050_AccelConfig	8	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:156:10:rbwsMPU6050_DataIsReady	0	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:172:6:rbwsMPU6050_init	16	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:202:6:rbwsMPU6050_ReadMeasurements	40	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:223:6:rbwsMPU6050_Complementary_Filter	32	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:246:6:rbwsMPU6050_main	104	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:297:6:rbwsInertialMeasurementUnit_Save_Measurement	8	static
+../rbwsInertialMeasurementUnit/src/rbwsMPU6050.c:309:17:rbwsInertialMeasurementUnit_Get_Measurements	0	static

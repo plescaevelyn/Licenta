@@ -1,0 +1,4 @@
+../drivers/fsl_pwt.c:42:17:PWT_GetInstance.isra	8	static
+../drivers/fsl_pwt.c:68:6:PWT_Init	16	static
+../drivers/fsl_pwt.c:95:6:PWT_Deinit	8	static
+../drivers/fsl_pwt.c:118:6:PWT_GetDefaultConfig	8	static

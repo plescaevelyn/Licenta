@@ -1,0 +1,7 @@
+../rbwsMotorControl/src/rbwsMotorControl.c:34:6:delay	8	static
+../rbwsMotorControl/src/rbwsMotorControl.c:45:6:rbwsMotorControl_Generate_PWM	8	static
+../rbwsMotorControl/src/rbwsMotorControl.c:85:6:rbwsMotorControl_Set_LiDAR_Motor_DutyCycle	8	static
+../rbwsMotorControl/src/rbwsMotorControl.c:102:6:rbwsMotorControl_Set_Motor_DutyCycle	8	static
+../rbwsMotorControl/src/rbwsMotorControl.c:119:6:rbwsMotorControl_Set_Servo_DutyCycle	8	static
+../rbwsMotorControl/src/rbwsMotorControl.c:135:6:rbwsMotorControl_initESC	8	static
+../rbwsMotorControl/src/rbwsMotorControl.c:147:6:rbwsMotorControl_init	8	static

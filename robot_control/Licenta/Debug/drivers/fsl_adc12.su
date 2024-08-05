@@ -1,0 +1,10 @@
+../drivers/fsl_adc12.c:74:17:ADC12_GetInstance.isra	8	static
+../drivers/fsl_adc12.c:133:6:ADC12_Init	16	static
+../drivers/fsl_adc12.c:174:6:ADC12_Deinit	8	static
+../drivers/fsl_adc12.c:198:6:ADC12_GetDefaultConfig	8	static
+../drivers/fsl_adc12.c:237:6:ADC12_SetChannelConfig	8	static
+../drivers/fsl_adc12.c:262:10:ADC12_GetChannelStatusFlags	8	static
+../drivers/fsl_adc12.c:365:6:ADC12_SetHardwareCompareConfig	8	static
+../drivers/fsl_adc12.c:413:6:ADC12_SetHardwareAverage	8	static
+../drivers/fsl_adc12.c:443:10:ADC12_GetStatusFlags	48	static
+../drivers/fsl_adc12.c:288:10:ADC12_DoAutoCalibration	40	static

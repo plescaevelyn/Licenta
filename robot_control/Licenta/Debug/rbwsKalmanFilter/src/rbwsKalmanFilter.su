@@ -1,0 +1,6 @@
+../rbwsKalmanFilter/src/rbwsKalmanFilter.c:59:6:rbwsKalmanFilter_getBMatrix	40	static
+../rbwsKalmanFilter/src/rbwsKalmanFilter.c:74:6:rbwsKalmanFilter_get_State_Estimate	56	static
+../rbwsKalmanFilter/src/rbwsKalmanFilter.c:96:6:rbwsKalmanFilter_get_Estimated_Sensor_Observation	24	static
+../rbwsKalmanFilter/src/rbwsKalmanFilter.c:113:6:rbwsKalmanFilter_Init	0	static
+../rbwsKalmanFilter/src/rbwsKalmanFilter.c:142:6:rbwsKalmanFilter_Predict	120	static
+../rbwsKalmanFilter/src/rbwsKalmanFilter.c:175:6:rbwsKalmanFilter_Update	176	static

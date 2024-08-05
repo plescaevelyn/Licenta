@@ -1,0 +1,11 @@
+C:\Users\PLE1CLJ\Licenta\Code\Licenta - FINAL\Licenta\drivers/fsl_clock.h:594:20:CLOCK_EnableClock	8	static
+../board/pin_mux.c:65:6:BOARD_InitPins	8	static
+../board/pin_mux.c:133:6:BOARD_InitOSCPins	8	static
+../board/pin_mux.c:165:6:BOARD_InitTOUCHPins	8	static
+../board/pin_mux.c:225:6:BOARD_InitBUTTONSPins	24	static
+../board/pin_mux.c:291:6:BOARD_InitTHERMISTORPins	8	static
+../board/pin_mux.c:347:6:BOARD_InitACCELPins	16	static
+../board/pin_mux.c:455:6:BOARD_InitDEBUG_UARTPins	8	static
+../board/pin_mux.c:31:6:BOARD_InitBootPins	8	static
+../board/pin_mux.c:512:6:BOARD_InitLEDsPins	32	static
+../board/pin_mux.c:602:6:BOARD_InitCANPins	16	static

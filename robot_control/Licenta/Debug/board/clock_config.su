@@ -1,0 +1,4 @@
+C:\Users\PLE1CLJ\Licenta\Code\Licenta - FINAL\Licenta\drivers/fsl_clock.h:623:20:CLOCK_SetIpSrc.constprop	8	static
+../board/clock_config.c:189:6:BOARD_BootClockRUN	24	static
+../board/clock_config.c:96:6:BOARD_InitBootClocks	8	static
+../board/clock_config.c:299:6:BOARD_BootClockVLPR	8	static
