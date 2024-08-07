@@ -42,7 +42,8 @@ The NXP FRDM KE-16Z development board uses FreeRTOS for task scheduling.
 The UART, I2C, GPIO, ADC and FlexTimer drivers are used here and the main applications are motor control, data acquiring (from the Lidar and IMU) and remote control.
 
 ## Raspberry Pi 5
-The Operating System with which this board is equipped is Linux Ubuntu 24.04 LTS and the WIP
+The Operating System with which this board is equipped is Linux Ubuntu 24.04 LTS. 
+It acquires Wheel Encoder data using the GPIO driver and uses USB for recieving the sensor data from the NXP development board serially. The applications developed on this board are data acquiring, publishing and subscribing using ROS, data visualization and the SLAM algorithm.
 
 # Used Technologies
 - C
