@@ -1,11 +1,16 @@
 cd ~/ros2_jazzy
-colcon build --symlink-install --packages-select encoder_data
+colcon build --symlink-install --packages-select common_serial_service imu_data lidar_data encoder_data my_mapping_package
 source ~/ros2_jazzy/install/local_setup.bash
-ros2 pkg executables encoder_data
+
+ros2 run common_serial_service serial_reader_service.py
+
+ros2 run lidar_data lidar_data_node.py
+
+ros2 run imu_data imu_data_node.py
+
 ros2 run encoder_data wheel_encoder_node.py
 
-cd ~/ros2_jazzy
-colcon build --symlink-install --packages-select lidar_data
-source ~/ros2_jazzy/install/local_setup.bash
-ros2 pkg executables lidar_data
-ros2 run lidar_data lidar_data_node.py
+ros2 launch my_mapping_package slam_toolbox_launch.py
+
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 base_link lidar_frame
+
