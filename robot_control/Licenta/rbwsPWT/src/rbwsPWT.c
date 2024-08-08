@@ -5,6 +5,9 @@
  *      Author: PLE1CLJ
  */
 
+/************/
+/* Includes */
+/************/
 #include "fsl_debug_console.h"
 #include "pin_mux.h"
 #include "board.h"
@@ -24,18 +27,18 @@
 /* Get source clock for PWT driver */
 #define PWT_SOURCE_CLOCK CLOCK_GetFreq(kCLOCK_BusClk)
 
-/*************
- * Variables
- *************/
+/************************/
+/* Variable definitions */
+/************************/
 volatile bool busyWait;
 volatile bool overflowFlag;
 pwt_config_t pwtConfig;
 uint16_t pulseWidth = 0;
 uint8_t reg;
 
-/********
- * Code
- ********/
+/****************************/
+/* Function implementations */
+/****************************/
 /*!
  * @brief ISR for PWT interrupt
  *
@@ -114,16 +117,16 @@ void rbwsPWT_readPulse(uint8_t mode)
         switch (reg)
         {
             case 0:
-//                PRINTF("\r\nLow overflow (0 duty ratio), signal stayed low\r\n");
+                PRINTF("\r\nLow overflow (0 duty ratio), signal stayed low\r\n");
                 break;
             case 1:
-//                PRINTF("\r\nHigh overflow (100% duty ratio), signal stayed high\r\n");
+                PRINTF("\r\nHigh overflow (100% duty ratio), signal stayed high\r\n");
                 break;
             case 2:
-//                PRINTF("\r\nToggled Low overflow\r\n");
+                PRINTF("\r\nToggled Low overflow\r\n");
                 break;
             default:
-//                PRINTF("\r\nToggled High overflow\r\n");
+                PRINTF("\r\nToggled High overflow\r\n");
                 break;
         }
     }
@@ -131,7 +134,7 @@ void rbwsPWT_readPulse(uint8_t mode)
     {
         pulseWidth = PWT_ReadPositivePulseWidth(PWT);
         pulseWidth = (uint16_t) (16.1290322581 * COUNT_TO_USEC(pulseWidth, PWT_SOURCE_CLOCK));
-//        PRINTF("\r\nPositive pulse width = %d usec\r\n", pulseWidth);
+        PRINTF("\r\nPositive pulse width = %d usec\r\n", pulseWidth);
 
         switch(mode)
         {
@@ -140,32 +143,29 @@ void rbwsPWT_readPulse(uint8_t mode)
         		if (pulseWidth >= 1450 && pulseWidth <= 1550)
         		{
         			/* Neutral state */
-//        			PRINTF("Buggy is in neutral state.\n");
+        			PRINTF("Buggy is in neutral state.\n");
         			var1 = 75;
-        			//PRINTF("%d\n",var1);
         			rbwsMotorControl_Set_Motor_DutyCycle(var1);
         		}
         		else if (pulseWidth > 1550)
         		{
         			/* Forward driving mode */
-//        			PRINTF("Buggy is in forward driving mode.\n");
+        			PRINTF("Buggy is in forward driving mode.\n");
 
         			var1 = (uint16_t)(0.025*pulseWidth + 37.5);
-        			//PRINTF("%d\n",var1);
         			rbwsMotorControl_Set_Motor_DutyCycle(var1);
         		}
         		else if (pulseWidth < 1450)
         		{
         			/* Backwards driving mode. In this case, a backwards-neutral-backwards mode is required */
-//        			PRINTF("Buggy is in backwards driving mode.\n");
+        			PRINTF("Buggy is in backwards driving mode.\n");
 
         			var1 = (uint16_t)(0.025*pulseWidth + 37.5);
-        			//PRINTF("%d\n",var1);
         			rbwsMotorControl_Set_Motor_DutyCycle(var1);
         		}
         		else
         		{
-        			//PRINTF("Undefined!\n");
+        			 PRINTF("Undefined!\n");
         		}
         		break;
         	case 1:
@@ -173,16 +173,15 @@ void rbwsPWT_readPulse(uint8_t mode)
         		{
         			if(pulseWidth < 110)
         			{
-        				pulseWidth = 1900;	//bad solution for overflow but works as a temporary fix
+        				pulseWidth = 1900;
         			}
-//        			PRINTF("No signal received from the RC!\n");
+         			PRINTF("No signal received from the RC!\n");
         		}
         		uint16_t var = (uint16_t)(-0.025*pulseWidth + 112.5 - 8);
-        		//PRINTF("%d\n", var);
         		rbwsMotorControl_Set_Servo_DutyCycle(var);
         	break;
         	default:
-//        		PRINTF("Undefined mode!\n");
+        		PRINTF("Undefined mode!\n");
         	break;
         }
     }
@@ -193,7 +192,7 @@ void rbwsPWT_readPulse(uint8_t mode)
 /*!
  * @brief Configures the PWT and reads the pulses from the ESC and the servo motor alternatively.
  */
-int rbwsPWT_main()
+void rbwsPWT_main()
 {
     PWT_GetDefaultConfig(&pwtConfig);
     PWT_Init(PWT, &pwtConfig);

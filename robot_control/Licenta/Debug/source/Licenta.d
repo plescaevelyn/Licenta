@@ -40,10 +40,8 @@ source/Licenta.o source/Licenta.d: ../source/Licenta.c \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel\include/task.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel\include/timers.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsI2C.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsKalmanFilter\inc/rbwsKalmanFilter.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_inc.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_api.h \
+ C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsMotorControl\inc/rbwsMotorControl.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsPWT\inc/rbwsPWT.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_pwt.h
@@ -88,10 +86,8 @@ C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel\include/task.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel\include/timers.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsI2C.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsKalmanFilter\inc/rbwsKalmanFilter.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_inc.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_api.h:
+C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsMotorControl\inc/rbwsMotorControl.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsPWT\inc/rbwsPWT.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_pwt.h:

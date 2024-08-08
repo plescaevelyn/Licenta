@@ -8,6 +8,9 @@
 #ifndef INC_RBWSKALMANFILTER_MATRIX_OPERATIONS_H_
 #define INC_RBWSKALMANFILTER_MATRIX_OPERATIONS_H_
 
+/***********************/
+/* Function prototypes */
+/***********************/
 void sum(uint8_t *n, float (*A)[n[1]], float (*B)[n[1]], float (*C)[n[1]]);
 void difference(uint8_t *n, float (*A)[n[1]], float (*B)[n[1]], float (*C)[n[1]]);
 void multiply_by_scalar(uint8_t* n, float (*A)[n[1]], float scalar);

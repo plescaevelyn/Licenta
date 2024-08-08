@@ -23,9 +23,7 @@
 #include "clock_config.h"
 
 #include "rbwsI2C.h"
-#include "rbwsKalmanFilter.h"
 #include "rbwsLidarA1M8_inc.h"
-#include "rbwsLidarA1M8_api.h"
 #include "rbwsMPU6050.h"
 #include "rbwsMotorControl.h"
 #include "rbwsPWT.h"
@@ -34,9 +32,7 @@
  * @brief   Application entry point.
  */
 int main(void) {
-
     /* Init board hardware. */
-
 	BOARD_InitBootPins();
     BOARD_InitBootClocks();
     BOARD_InitBootPeripherals();
@@ -57,8 +53,6 @@ int main(void) {
 		rbwsMPU6050_main();
 		rbwsPWT_main();
 	}
-
-//    rbwsFreeRTOS_Initialize();
 
     return 0 ;
 }

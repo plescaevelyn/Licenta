@@ -8,7 +8,11 @@
 #ifndef RBWS_KALMAN_FILTER_H
 #define RBWS_KALMAN_FILTER_H
 
+/************/
+/* Includes */
+/************/
 #include "rbwsMPU6050.h"
+
 /*********************/
 /* Macro definitions */
 /*********************/

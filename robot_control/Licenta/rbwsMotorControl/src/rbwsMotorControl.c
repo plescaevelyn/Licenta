@@ -13,6 +13,9 @@
 *
 * ------------------------------------------------------------------*/
 
+/************/
+/* Includes */
+/************/
 #include "rbwsMotorControl.h"
 #include <stdio.h>
 #include <stdint.h>
@@ -21,9 +24,9 @@
 #include "fsl_ftm.h"
 #include "fsl_debug_console.h"
 
-/***************************/
-/* 		Variables          */
-/***************************/
+/************************/
+/* Variable definitions */
+/************************/
 volatile uint16_t motorUpdatedDutycycle = 0;
 volatile uint16_t lidarUpdatedDutyCycle = 0;
 volatile uint16_t servoUpdatedDutyCycle = 0;
@@ -134,8 +137,6 @@ void rbwsMotorControl_Set_Servo_DutyCycle(uint16_t desired_value)
  */
 void rbwsMotorControl_initESC()
 {
-//	rbwsMotorControl_Set_Motor_DutyCycle(87); /* 8.75 - 2   ms */
-
 	rbwsMotorControl_Set_Motor_DutyCycle(75);	/* 7.5 - 1.5 ms */
 
 	delay(3000);

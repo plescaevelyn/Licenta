@@ -12,9 +12,12 @@
 * @author: Plesca Evelyn-Iulia (PLE1CLJ)
 *
 * ------------------------------------------------------------------*/
+
+/************/
+/* Includes */
+/************/
 #include "rbwsI2C.h"
 #include "rbwsMPU6050.h"
-#include "rbwsKalmanFilter.h"
 
 #include <stdio.h>
 #include <stdint.h>
@@ -25,9 +28,9 @@
 #include "fsl_common.h"
 #include "fsl_debug_console.h"
 
-/****************************/
-/* Function initializations */
-/****************************/
+/************************/
+/* Variable definitions */
+/************************/
 uint8_t g_master_txBuff[1];
 uint8_t g_master_rxBuff[1];
 
@@ -47,16 +50,16 @@ float	past_meas_gyro_xf, past_meas_gyro_yf, past_meas_gyro_zf;
 
 float	phiHat_rad = 0, thetaHat_rad = 0;
 
-EKF		*ekf, *ekfPrev;
 
 IMUMeasurement *measurement;
 
 /* 'A^-1' matrix from Magneto */
-//float A[3][3] = {
-//		{1.590565, 0.090734, 0.087648},
-//		{0.090734, 1.308956, 0.130654},
-//		{0.087648, 0.130654, 1.577745}
-//};
+/* float A[3][3] = {
+		{1.590565, 0.090734, 0.087648},
+		{0.090734, 1.308956, 0.130654},
+		{0.087648, 0.130654, 1.577745}
+}; */
+
 float A[3][3] = {
 		{1, 0, 0},
 		{0, 1, 0},
@@ -237,7 +240,7 @@ void rbwsMPU6050_Complementary_Filter()
 	phiHat_rad = COMP_FILT_ALPHA * phiHat_accel_rad + (1 - COMP_FILT_ALPHA) * (phiHat_accel_rad + (SAMPLE_TIME_MS / 1000.0f) * phiDot_rps);
 	thetaHat_rad = COMP_FILT_ALPHA * thetaHat_accel_rad + (1 - COMP_FILT_ALPHA) * (thetaHat_accel_rad + (SAMPLE_TIME_MS / 1000.0f) * thetaDot_rps);
 
-//	PRINTF("Roll and pitch angles: %f, %f\n\n", phiHat_rad * RAD2DEG, thetaHat_rad * RAD2DEG);
+	PRINTF("Roll and pitch angles: %f, %f\n\n", phiHat_rad * RAD2DEG, thetaHat_rad * RAD2DEG);
 }
 
 /*
@@ -271,12 +274,6 @@ void rbwsMPU6050_main()
 	gyro_yf = past_meas_gyro_yf * COMP_FILT_ALPHA + gyro_yf * (1 - COMP_FILT_ALPHA);
 	gyro_zf = past_meas_gyro_zf * COMP_FILT_ALPHA + gyro_zf * (1 - COMP_FILT_ALPHA);
 
-	/* Save the measurements inside the struct */
-//	rbwsInertialMeasurementUnit_Save_Measurement(measurement, accel_xf, accel_yf, accel_zf, gyro_xf, gyro_yf, gyro_zf);
-
-//	rbwsKalmanFilter_Predict(ekf, *measurement);
-//	rbwsKalmanFilter_Update(ekf, ekfPrev, *measurement);
-
 	/* Assigning new past measurements */
 	past_meas_accel_xf = accel_xf;
 	past_meas_accel_yf = accel_yf;
@@ -285,8 +282,6 @@ void rbwsMPU6050_main()
 	past_meas_gyro_xf = gyro_xf;
 	past_meas_gyro_yf = gyro_yf;
 	past_meas_gyro_zf = gyro_zf;
-
-//	ekfPrev = ekf;
 
 	PRINTF("IMU: %f %f %f %f %f %f \n", accel_xf, accel_yf, accel_zf, gyro_xf, gyro_yf, gyro_zf);
 }

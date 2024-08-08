@@ -22,10 +22,8 @@ rbwsFreeRTOS/src/rbwsFreeRTOS.o rbwsFreeRTOS/src/rbwsFreeRTOS.d: \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_clock.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_lpi2c.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsKalmanFilter\inc/rbwsKalmanFilter.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_inc.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_api.h \
+ C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsMotorControl\inc/rbwsMotorControl.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_ftm.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsPWT\inc/rbwsPWT.h \
@@ -54,10 +52,8 @@ C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common_arm.h
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_clock.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_lpi2c.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsKalmanFilter\inc/rbwsKalmanFilter.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_inc.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_api.h:
+C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsMotorControl\inc/rbwsMotorControl.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_ftm.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsPWT\inc/rbwsPWT.h:

@@ -1,5 +1,5 @@
-../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:90:6:delay	8	static
-../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:103:9:rbwsLidarA1M8_sendCommandAndGetResponse	32	static
-../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:163:9:rbwsLidarScanMode	16	static
-../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:37:6:rbwsLidarA1M8_init	16	static
-../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:64:6:rbwsLidarA1M8_main	16	static
+../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:81:6:delay	8	static
+../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:94:9:rbwsLidarA1M8_sendCommandAndGetResponse	40	static
+../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:153:9:rbwsLidarScanMode	16	static
+../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:35:6:rbwsLidarA1M8_init	24	static
+../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c:62:6:rbwsLidarA1M8_main	16	static

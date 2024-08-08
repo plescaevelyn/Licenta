@@ -6,24 +6,34 @@
  */
 
 
+/************/
+/* Includes */
+/************/
 #include "rbwsFreeRTOS.h"
 #include "FreeRTOS.h"
 
 #include "rbwsI2C.h"
-#include "rbwsKalmanFilter.h"
 #include "rbwsLidarA1M8_inc.h"
-#include "rbwsLidarA1M8_api.h"
 #include "rbwsMPU6050.h"
 #include "rbwsMotorControl.h"
 #include "rbwsPWT.h"
 
 #include "task.h"
 
+/*********************/
+/* Macro definitions */
+/*********************/
 #define INIT_TASK_PRIORITY				  ( configMAX_PRIORITIES - 1 )
 #define MAIN_TASK_PRIORITY                ( configMAX_PRIORITIES - 2 )
 
+/************************/
+/* Variable definitions */
+/************************/
 volatile uint8_t check_for_debugger=0;
 
+/****************************/
+/* Function implementations */
+/****************************/
 /**
  * @brief Performs the initialization of modules.
  *

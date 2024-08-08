@@ -8,6 +8,9 @@
 #ifndef INC_RBWSMPU6050_H_
 #define INC_RBWSMPU6050_H_
 
+/************/
+/* Includes */
+/************/
 #include "fsl_common.h"
 
 /*********************/

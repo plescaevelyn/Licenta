@@ -16,7 +16,6 @@ rbwsInertialMeasurementUnit/src/rbwsMPU6050.o \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_lpi2c.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsKalmanFilter\inc/rbwsKalmanFilter.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\utilities/fsl_debug_console.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\component\serial_manager/fsl_component_serial_manager.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\component\serial_manager/fsl_component_serial_port_uart.h \
@@ -43,7 +42,6 @@ C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_clock.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_lpi2c.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsInertialMeasurementUnit\inc/rbwsMPU6050.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsKalmanFilter\inc/rbwsKalmanFilter.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\utilities/fsl_debug_console.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\component\serial_manager/fsl_component_serial_manager.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\component\serial_manager/fsl_component_serial_port_uart.h:

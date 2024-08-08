@@ -2,8 +2,6 @@ rbwsLidarA1M8/src/rbwsLidarA1M8_main.o \
  rbwsLidarA1M8/src/rbwsLidarA1M8_main.d: \
  ../rbwsLidarA1M8/src/rbwsLidarA1M8_main.c \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_inc.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_api.h \
- C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M1_def.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsMotorControl\inc/rbwsMotorControl.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\device/fsl_device_registers.h \
@@ -34,8 +32,6 @@ rbwsLidarA1M8/src/rbwsLidarA1M8_main.o \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel\include/task.h \
  C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\freertos\freertos-kernel\include/list.h
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_inc.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M8_api.h:
-C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsLidarA1M8\inc/rbwsLidarA1M1_def.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\rbwsMotorControl\inc/rbwsMotorControl.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\drivers/fsl_common.h:
 C:\Users\PLE1CLJ\Licenta\Code\Licenta\ -\ FINAL\Licenta\device/fsl_device_registers.h:

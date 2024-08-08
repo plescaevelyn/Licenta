@@ -8,6 +8,9 @@
 #ifndef INC_RBWSPWT_H_
 #define INC_RBWSPWT_H_
 
+/************/
+/* Includes */
+/************/
 #include "fsl_pwt.h"
 #include "rbwsMotorControl.h"
 
@@ -21,6 +24,6 @@
 /***********************/
 void rbwsPWT_init(pwt_input_select_t pwt_port);
 void rbwsPWT_readPulse(uint8_t mode);
-int rbwsPWT_main(void);
+void rbwsPWT_main(void);
 
 #endif /* INC_RBWSPWT_H_ */

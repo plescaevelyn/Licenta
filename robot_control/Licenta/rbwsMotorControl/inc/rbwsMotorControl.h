@@ -8,7 +8,9 @@
 #ifndef INC_RBWSMOTORCONTROL_H_
 #define INC_RBWSMOTORCONTROL_H_
 
-
+/************/
+/* Includes */
+/************/
 #include <stdint.h>
 #include <stdio.h>
 #include <fsl_common.h>

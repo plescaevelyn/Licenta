@@ -5,12 +5,10 @@
  *      Author: PLE1CLJ
  */
 
-/****************************/
-/* INCLUDES                 */
-/****************************/
-#include "rbwsLidarA1M8_inc.h"
-#include "rbwsLidarA1M8_api.h"
-#include "rbwsLidarA1M1_def.h"
+/************/
+/* Includes */
+/************/
+#include <rbwsLidarA1M8_inc.h>
 #include "rbwsMotorControl.h"
 
 #include <stdio.h>
@@ -23,13 +21,13 @@
 #include "fsl_lpuart.h"
 #include "task.h"
 
-/****************************/
-/* LOCAL VARS               */
-/****************************/
+/************************/
+/* Variable definitions */
+/************************/
 uint8_t scanStarted;
 
 /****************************/
-/* RUNNERS                  */
+/* Function implementations */
 /****************************/
 /**
  * @brief Initialise Lidar measurement. Returns Health status of Lidar.
@@ -45,12 +43,12 @@ void rbwsLidarA1M8_init()
 
 	/* Get device Health info */
 	responseLen = rbwsLidarA1M8_sendCommandAndGetResponse(LIDAR_GET_HEALTH, receiveBuffer);
-//	PRINTF("Device health response: ");
-//	for(int i = 0; i < responseLen; i++)
-//	{
-//		PRINTF("%02X", receiveBuffer[i]);
-//	}
-//	PRINTF("\n");
+	PRINTF("Device health response: ");
+	for(int i = 0; i < responseLen; i++)
+	{
+		PRINTF("%02X", receiveBuffer[i]);
+	}
+	PRINTF("\n");
 
 	rbwsLidarScanMode();
 }
@@ -77,13 +75,6 @@ void rbwsLidarA1M8_main()
 
 }
 
-/****************************/
-/* API'S                    */
-/****************************/
-
-/****************************/
-/* FUNCTION IMPLEMENTATIONS */
-/****************************/
 /**
  * @brief Delay function in milliseconds.
  */
@@ -130,7 +121,6 @@ uint8_t rbwsLidarA1M8_sendCommandAndGetResponse(uint8_t command, uint8_t* respon
 			dataInLen = 0;
 			hasDescriptor = 0;
 		break;
-		//return error
 		default:
 			dataInLen = -1;
 			return dataInLen;
@@ -142,11 +132,11 @@ uint8_t rbwsLidarA1M8_sendCommandAndGetResponse(uint8_t command, uint8_t* respon
 	{
 
 		LPUART_ReadBlocking(LPUART2, responseDescriptor, 7);
-//		for(int i = 0; i < 7; i++)
-//		{
-//			PRINTF("%02X ", responseDescriptor[i]);
-//		}
-//		PRINTF("\n");
+		for(int i = 0; i < 7; i++)
+		{
+			PRINTF("%02X ", responseDescriptor[i]);
+		}
+		PRINTF("\n");
 	}
 	if(dataInLen > 0)
 	{
@@ -163,7 +153,6 @@ uint8_t rbwsLidarA1M8_sendCommandAndGetResponse(uint8_t command, uint8_t* respon
 uint8_t rbwsLidarScanMode()
 {
 	uint8_t responsePacket[8];
-	uint8_t dummy[8];
 	uint8_t responseLength;
 
 	/* motor power up */

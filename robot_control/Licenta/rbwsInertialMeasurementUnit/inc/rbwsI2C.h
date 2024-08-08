@@ -8,6 +8,9 @@
 #ifndef INC_RBWSI2C_H_
 #define INC_RBWSI2C_H_
 
+/************/
+/* Includes */
+/************/
 #include "fsl_common.h"
 #include "fsl_lpi2c.h"
 
@@ -48,9 +51,9 @@ typedef struct _regList
     uint8_t size; /* read size from register */
 } regList_t;
 
-/*******************
- * Prototypes
- *******************/
+/***********************/
+/* Function prototypes */
+/***********************/
 void lpi2c_master_callback(LPI2C_Type *base, lpi2c_master_handle_t *handle, status_t status, void *userData);
 status_t rbwsI2C_Read(uint8_t* rxBuff,uint8_t* txBuff, uint8_t rxlength, uint8_t txlength);
 status_t rbwsI2C_Write(uint8_t* txbuff, uint8_t length);

@@ -13,6 +13,9 @@
 *
 * ------------------------------------------------------------------*/
 
+/************/
+/* Includes */
+/************/
 #include "rbwsKalmanFilter.h"
 #include "rbwsKalmanFilter_Matrix_Operations.h"
 #include "rbwsMPU6050.h"
@@ -27,7 +30,7 @@
 #include "fsl_debug_console.h"
 
 /************************/
-/* VARIABLE DEFINITIONS */
+/* Variable definitions */
 /************************/
 float state_estimate_t_minus_1[3] = {0, 0, 0}; /* the estimated state vector at time t-1 in the global reference frame */
 float control_vector_t_minus_1[2] = {0, 0}; /* the control input vector at time t-1 in the global reference frame */
@@ -50,12 +53,13 @@ float S_inv[2][2]; /* inverse of the residual covariance matrix */
 float K[2][3]; /* near-optimal Kalman gain */
 
 float estimated_sensor_observation[3];
+
 /****************************/
-/* FUNCTION IMPLEMENTATIONS */
+/* Function implementations */
 /****************************/
-/**********************************/
-/* Deriving the State Space Model */
-/**********************************/
+/**
+ * @brief Function used for defining the state space model.
+ */
 void rbwsKalmanFilter_getBMatrix(EKF *ekf, float dt)
 {
 	B[0][0] = cos(ekf->yaw) * dt;

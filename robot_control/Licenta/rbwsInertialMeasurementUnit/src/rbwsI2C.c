@@ -12,6 +12,9 @@
 *
 * ------------------------------------------------------------------*/
 
+/************/
+/* Includes */
+/************/
 #include "rbwsI2C.h"
 
 #include <stdint.h>
@@ -21,17 +24,17 @@
 #include "fsl_common.h"
 #include "fsl_debug_console.h"
 
-/*******************************************************************************
- * Variables
- ******************************************************************************/
+/************************/
+/* Variable definitions */
+/************************/
 volatile bool completionFlag = false;
 volatile bool nakFlag        = false;
 
 size_t txCount        		= 0xFFU;
 
-/*******************************************************************************
- * Code
- ******************************************************************************/
+/****************************/
+/* Function implementations */
+/****************************/
 void lpi2c_master_callback(LPI2C_Type *base, lpi2c_master_handle_t *handle, status_t status, void *userData)
 {
     /* Signal transfer success when received success status. */
