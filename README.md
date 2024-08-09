@@ -9,11 +9,11 @@ For this project, I have developed a four wheeled differential-drive robot equip
 - Wheel Encoder
 - FlySky FS-i6 radio controller
 
-<img src="imgs/robot.jpg" alt="Final form of the robot"/><br />
+<img src="src/imgs/robot.jpg" alt="Final form of the robot"/><br />
 <sub><b>Final form of the robot</b></sub></a>
 
 # System Architecture
-<img src="imgs/system_architecture.png" alt="System Architecture"/><br />
+<img src="src/imgs/system_architecture.png" alt="System Architecture"/><br />
 <sub><b>System Architecture</b></sub></a>
 
 The system is powered by a 2S LiPo battery, limited with the use of a Step Down Buck converter. 
@@ -34,7 +34,7 @@ Four nodes are created in ROS:
 These messages are added to a custom Rviz configuration, where the map is finally visualized.
 
 # Software Architecture
-<img src="imgs/software_architecture.png" alt="Software Architecture"/><br />
+<img src="src/imgs/software_architecture.png" alt="Software Architecture"/><br />
 <sub><b>Software Architecture</b></sub></a>
 
 ## NXP FRDM KE-16Z development board
