@@ -49,8 +49,8 @@ The robot's components are organized across three levels:
 ### NXP FRDM KE-16Z Modules
 - **rbwsFreeRTOS**: Manages real-time operating tasks.
 - **rbwsMotorControl**: Handles motor control operations.
-- **rbwsPWT**: Manages pulse width timers.
-- **rbwsInertialMeasurementUnit**: Processes IMU data.
+- **rbwsPWT**: Manages the remote control of the robot using the Pulse Width Timer Module.
+- **rbwsInertialMeasurementUnit**: Processes and filters IMU data.
 - **rbwsKalmanFilter**: Applies filtering techniques to sensor data.
 - **rbwsLidarA1M8**: Manages Lidar data processing.
 
